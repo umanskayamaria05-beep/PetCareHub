@@ -1,104 +1,160 @@
 # PetCareHub
 Вебплатформа для догляду за домашніми тваринами: запис до ветеринара, грумінг, дресирування та збереження медичної історії.
-Опис проєкту: Платформа дозволяє власникам тварин: записуватися до ветеринара, знаходити грумерів, отримувати послуги дресирування, зберігати медичну історію тварини, отримувати нагадування про щеплення та користуватися онлайн-консультаціями.
-Мета проєкту: Полегшити життя власникам домашніх тварин за рахунок зручного доступу до всіх сервісів догляду в одному цифровому просторі.
-Основні переваги: всі послуги в одному місці, зручний інтерфейс, онлайн-запис, персоналізовані рекомендації, цифрова медична картка тварини.
-Розробник: Уманська Марія Андріївна
-Рік: 2026
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCareHub</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f9f9;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             color: #333;
         }
+
         header {
-            background-color: #2a9d8f;
-            color: green;
-            padding: 20px;
+            background-color: #2e7d32;
+            color: white;
+            padding: 30px;
             text-align: center;
         }
+
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         section {
             padding: 40px;
-            text-align: center;
+            max-width: 1000px;
+            margin: auto;
         }
+
+        .block {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature {
+            flex: 1 1 45%;
+            background-color: #eeeeee;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
         .btn {
-            background-color: #e76f51;
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #2e7d32;
             color: white;
-            padding: 15px 25px;
             text-decoration: none;
             border-radius: 5px;
         }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .feature {
-            width: 250px;
-            margin: 10px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-        }
+
         footer {
-            background-color: #264653;
+            background-color: #424242;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>PetCareHub</h1>
-    <p>Всі сервіси для догляду за домашніми тваринами в одному місці</p>
+    <p>Цифрова платформа для комплексного догляду за домашніми тваринами</p>
 </header>
 
-<section>
-    <h2>Зручно. Швидко. Надійно.</h2>
-    <p>Запис до ветеринара, грумінг, дресирування та онлайн-консультації</p>
-    <a href="#" class="btn">Спробувати зараз</a>
-</section>
+<nav>
+    <a href="#">Головна</a>
+    <a href="#">Послуги</a>
+    <a href="#">Про нас</a>
+    <a href="#">Контакти</a>
+</nav>
 
 <section>
-    <h2>Наші можливості</h2>
-    <div class="features">
-        <div class="feature">
-            <h3>Ветеринар</h3>
-            <p>Онлайн запис до ветеринара</p>
-        </div>
-        <div class="feature">
-            <h3>Грумінг</h3>
-            <p>Пошук і запис до грумерів</p>
-        </div>
-        <div class="feature">
-            <h3>Медична історія</h3>
-            <p>Зберігайте всі дані про здоров’я тварини</p>
-        </div>
-        <div class="feature">
-            <h3>Нагадування</h3>
-            <p>Не пропускайте щеплення та процедури</p>
+
+    <div class="block">
+        <h2>Про платформу</h2>
+        <p>
+            PetCareHub — це сучасна вебплатформа, яка об’єднує всі необхідні сервіси для догляду за домашніми тваринами в одному цифровому середовищі. 
+            Користувачі можуть швидко та зручно отримати доступ до ветеринарних послуг, записатися до спеціалістів, а також контролювати стан здоров’я своїх улюбленців.
+        </p>
+        <p>
+            Основна мета платформи — спростити процес взаємодії між власниками тварин та постачальниками послуг, забезпечивши ефективність, доступність та якість обслуговування.
+        </p>
+    </div>
+
+    <div class="block">
+        <h2>Основні можливості</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Запис до ветеринара</h3>
+                <p>
+                    Користувач може обрати ветеринарну клініку, переглянути доступні дати та записатися онлайн без необхідності телефонних дзвінків.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Грумінг та догляд</h3>
+                <p>
+                    Платформа дозволяє знайти спеціалістів з догляду за тваринами та записатися на відповідні процедури.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Медична історія</h3>
+                <p>
+                    Усі дані про вакцинацію, лікування та огляди зберігаються в одному місці та доступні у будь-який час.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Нагадування</h3>
+                <p>
+                    Система автоматично нагадує про важливі процедури, зокрема щеплення та планові огляди.
+                </p>
+            </div>
         </div>
     </div>
-</section>
 
-<section>
-    <h2>Чому обирають нас?</h2>
-    <p>✔ Всі сервіси в одному місці</p>
-    <p>✔ Простий інтерфейс</p>
-    <p>✔ Економія часу</p>
+    <div class="block">
+        <h2>Переваги використання</h2>
+        <p>
+            Використання PetCareHub дозволяє значно зекономити час, підвищити рівень догляду за домашніми тваринами та отримати доступ до перевірених спеціалістів.
+        </p>
+        <p>
+            Платформа створена з урахуванням потреб сучасних користувачів та відповідає актуальним вимогам цифровізації сервісів.
+        </p>
+        <a href="#" class="btn">Розпочати користування</a>
+    </div>
+
 </section>
 
 <footer>
-    <p>© 2026 Розробник:Уманська Марія Андріївна</p>
+    <p>© 2026 Розробник: (твоє ім’я)</p>
 </footer>
 
 </body>
